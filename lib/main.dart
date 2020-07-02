@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,35 +14,94 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: Column(
             children: <Widget>[
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/foto hazim.jpg'),
+              ),
+              Text(
+                'Muhammad Hazim Al Farouq',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                'Student',
+                style: TextStyle(
+                  fontFamily: 'SourceSansPro',
+                  fontSize: 19,
+                  color: Colors.teal.shade100,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               Container(
-                width: 100.0,
-                padding: EdgeInsets.all(20.0),
-                color: Colors.red,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.green,
-                  )
-                ],
+                color: Colors.white,
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.school,
+                      size: 25,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'University of Indonesia ',
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 23,
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
-                width: 100.0,
-                padding: EdgeInsets.all(20.0),
-                color: Colors.blue,
+                color: Colors.white,
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.laptop_windows),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'Computer Science',
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 23,
+                      ),
+                    )
+                  ],
+                ),
               ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.email),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'muhammadhazim86@gmail.com',
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
