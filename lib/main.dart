@@ -39,67 +39,73 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.school,
-                      size: 25,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'University of Indonesia ',
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 23,
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.school,
+                        size: 25,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        'University of Indonesia ',
+                        style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 23,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.laptop_windows),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'Computer Science',
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 23,
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.laptop_windows),
+                      SizedBox(
+                        width: 10,
                       ),
-                    )
-                  ],
+                      Text(
+                        'Computer Science',
+                        style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 23,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.email),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'muhammadhazim86@gmail.com',
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 20,
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.email),
+                      SizedBox(
+                        width: 10,
                       ),
-                    ),
-                  ],
+                      Text(
+                        'muhammadhazim86@gmail.com',
+                        style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],
